@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="conteiner">
+      <nav class="main-nav">
+        <a href="./index.html" class="logo">Web <span class="studio">Studio</span></a>
+
+        <ul class="site-nav list">
+          <li class="item"><a href="#" class="link current">Студия</a></li>
+          <li class="item">
+            <a href="./portfolios.html" class="link underline">Портфолио</a>
+          </li>
+          <li class="item">
+            <a href="#" class="link underline">Контакты</a>
+          </li>
+        </ul>
+        <ul class="auth-nav list">
+          <li class="item">
+            <a class="link" href="info@devstudio.com" >
+              <svg class="connection" width="16" height="11">
+                <use href="./img/sprite.svg#logo_01"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" href="+380961111111" >
+              <svg class="connection" width="10" height="15">
+                <use href="./img/sprite.svg#logo_02"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="overlay">
+        <section class="hero">
+          <h1 class="hero-title">
+            Эффективные решения<br />
+            для вашего бизнеса
+          </h1>
+          <!-- <a href="#" class="button-studio">Заказать услугу</a> -->
+          <button class="button-studio" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal >
+            <div class="modal">
+              <p>
+                Это помогает быстро писать и редактировать текст.
+                Студенты и другие пользователи могут быстро создавать онлайн-заметки без установки программного обеспечения для редактирования текста.
+                Позволяет проверить оригинальность написанного контента
+                Блогеры, писатели и веб-мастера могут использовать наш перефразировщик, чтобы переписать содержание, избегая плагиата.
+                Это помогает разработчикам работать с одним файлом, одновременно работая над разными проектами.
+              </p>
+              <button data-modal-close>Закрыть</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="section conteiner">
+        <ul class="feature-list">
+          <li class="items">
+            <div class="items-list">
+              <svg width="65" heigth="70">
+                <use href="./img/sprite.svg#plate"></use>
+              </svg>
+            </div>
+            <h2 class="section-title">Внимание к деталям</h2>
+            <p class="section-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          </li>
+          <li class="items">
+            <div class="items-list">
+              <svg width="67" height="70">
+                <use href="./img/sprite.svg#clock"></use>
+              </svg>
+            </div>
+            <h2 class="section-title">Пунктуальность</h2>
+            <p class="section-text">
+              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+            </p>
+          </li>
+          <li class="items">
+            <div class="items-list">
+              <svg width="70" heigth="54">
+                <use href="./img/sprite.svg#computer"></use>
+              </svg>
+            </div>
+            <h2 class="section-title">Планирование</h2>
+            <p class="section-text">
+              Равным образом консультация с широким активом в значительной степени обуславливает.
+            </p>
+          </li>
+          <li class="items">
+            <div class="items-list">
+              <svg width="70" heigth="70">
+                <use href="./img/sprite.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h2 class="section-title">Современные технологии</h2>
+            <p class="section-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="works conteiner">
+        <h2 class="line">Чем мы занимаемся</h2>
+        <ul class="works-ul">
+          <li class="titles">
+            <h3 class="works-title">Десктопные приложения</h3>
+            <img src="./img/growing_business.jpg" alt="computer" width="370" />
+          </li>
+          <li class="titles">
+            <h3 class="works-title">Мобильные приложения</h3>
+            <img src="./img/mobile.jpg" alt="mobile" width="370" />
+          </li>
+          <li class="titles">
+            <h3 class="works-title">Дизайнерские решения</h3>
+            <img src="./img/monitor.jpg" alt="monitor" width="370" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="command conteiner">
+        <h2 class="command-title">Наша команда</h2>
+        <ul class="command-list">
+          <li class="people-list">
+            <div class="section-box">
+              <img class="section-image" src="./img/product_designer.jpg" alt="product_designer" />
+              <h3 class="people">Николай Кучеренко</h3>
+              <p class="paragraph">Product Designer</p>
+              <ul class="social-title">
+                <li class="social">
+                  <a class="social-link" href="https://www.instagram.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#instagram"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://www.twitter.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#twitter"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://uk-ua.facebook.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#facebook"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://linkedin.com/">
+                    <svg class="badge" width="20" height="20">
+                    <use href="./img/sprite.svg#linkedin"></use>
+                </svg></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="people-list">
+            <div class="section-box">
+  <img class="section-image" src="./img/frontend_developer.jpg" alt="frontend_developer" />
+              <h3 class="people">Ольга Иванова</h3>
+              <p class="paragraph">Frontend Developer</p>
+              <ul class="social-title">
+                <li class="social">
+                  <a class="social-link" href="https://www.instagram.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#instagram"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://www.twitter.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#twitter"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://uk-ua.facebook.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#facebook"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://linkedin.com/">
+                    <svg class="badge" width="20" height="20">
+                    <use href="./img/sprite.svg#linkedin"></use>
+                </svg></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="people-list">
+            <div class="section-box">
+              <img class="section-image" src="./img/marketing.jpg" alt="marketing" />
+              <h3 class="people">Андрей Шевченко</h3>
+              <p class="paragraph">Marketing</p>
+              <ul class="social-title">
+                <li class="social">
+                  <a class="social-link" href="https://www.instagram.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#instagram"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://www.twitter.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#twitter"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://uk-ua.facebook.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#facebook"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://linkedin.com/">
+                    <svg class="badge" width="20" height="20">
+                    <use href="./img/sprite.svg#linkedin"></use>
+                </svg></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="people-list">
+            <div class="section-box">
+              <img class="section-image" src="img/designer.jpg" alt="designer" />
+              <h3 class="people">Иван Николаев</h3>
+              <p class="paragraph">UI Designer</p>
+              <ul class="social-title">
+                <li class="social">
+                  <a class="social-link" href="https://www.instagram.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#instagram"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://www.twitter.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#twitter"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://uk-ua.facebook.com/"
+                    ><svg class="badge" width="20" height="20">
+                      <use href="./img/sprite.svg#facebook"></use>
+                  </svg></a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="https://linkedin.com/">
+                    <svg class="badge" width="20" height="20">
+                    <use href="./img/sprite.svg#linkedin"></use>
+                </svg></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="clients-title conteiner">
+        <h2 class="clients">Постоянные клиенты</h2>
+        <div>
+          <ul class="clients-item">
+            <li class="company">
+              
+                <a class="firms-photo" href="#"><svg width="44" height="49">
+                  <use href="./img/sprite.svg#logo-1"></use>
+                </svg></a>
+              
+            </li>
+            <li class="company">
+              
+                <a class="firms-photo" href="#"><svg width="40" height="52">
+                  <use href="./img/sprite.svg#logo-2"></use>
+                </svg></a>
+              
+            </li>
+            <li class="company">
+              
+                <a class="firms-photo" href="#"
+                  ><svg width="41" height="43">
+                    <use href="./img/sprite.svg#logo-3"></use>
+                  </svg></a>
+              
+            </li>
+            <li class="company">
+              
+                <a class="firms-photo" href="#"
+                  ><svg width="80" height="42">
+                    <use href="./img/sprite.svg#logo-4"></use>
+                  </svg></a>
+              
+            </li>
+            <li class="company">
+              
+                <a class="firms-photo" href="#"><svg width="59" height="47">
+                  <use href="./img/sprite.svg#logo-5"></use>
+                </svg></a>
+              
+            </li>
+            <li class="company">
+              
+                <a class="firms-photo" href="#"
+                  ><svg width="88" height="45">
+                    <use href="./img/sprite.svg#logo-6"></use>
+                  </svg></a>
+              
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="cellar conteiner">
+      <div class="contact">
+        <a href="./index.html" class="logo">Web <span class="footer-studio">Studio</span></a>
+
+        <address class="adres">
+          <a
+            href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
+            class="cellar-title"
+            >г. Киев, пр-т Леси Украинки, 26</a
+          >
+        </address>
+
+        <a href="info@example.com" class="cellar-exile">info@example.com</a>
+
+        <a href="+380991111111" class="cellar-exiles">+38 099 111 11 11</a>
+      </div>
+      <div>
+        <p>
+          <b>ПРИСОЕДИНЯЙТЕСЬ</b>
+        </p>
+        <ul class="networks">
+          <li>
+            <a class="adres-title" href="https://www.instagram.com/">
+              <svg class="networks-list" width="20" height="20">
+                <use href="./img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          </li>
+          <li>
+            <a class="adres-title" href="https://twitter.com/?lang=ru"><svg class="networks-list" width="20" height="20">
+              <use href="./img/sprite.svg#twitter"></use>
+          </svg></a>
+          </li>
+          <li>
+            <a class="adres-title" href="https://uk-ua.facebook.com/"><svg class="networks-list" width="20" height="20">
+              <use href="./img/sprite.svg#facebook"></use>
+          </svg></a>
+          </li>
+          <li>
+            <a class="adres-title" href="https://linkedin.com/"><svg class="networks-list" width="20" height="20">
+              <use href="./img/sprite.svg#linkedin"></use>
+          </svg></a>
+          </li>
+        </ul>
+      </div>
+
+      
+      <!-- <p>
+        <b>подпишитесь на рассылку</b>
+      </p> -->
+
+      <!-- <div>
+        <ul>
+          <li>
+            
+          </li>
+          <li>
+            <a href="#" class="button-studio">Подписаться</a>
+          </li>
+        </ul>
+      </div> -->
+    </footer>
+    <script src="./js/modal.js"></script>
+</body>
+  </body>
+</html>

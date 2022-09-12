@@ -1,0 +1,31 @@
+/* убираем отступ у последнего элемента в списrt */
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+/* расширить обдасть ховера на ссылке */
+.site-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+/* как дать списку с картинками упорядоченый список  */
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.flex-element {
+  justify-content: space-between;
+}
+/* justify-content :space-between тоьлко тогда их одинаковое количество в строку,в другом случае будут дырки */
+
+.flex-element {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  /* отличный вариант упорядочить и подогнать список под таблицу с элементами */
+}
