@@ -64,14 +64,46 @@
           <button class="button-studio" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal >
             <div class="modal">
-              <p>
-                Это помогает быстро писать и редактировать текст.
-                Студенты и другие пользователи могут быстро создавать онлайн-заметки без установки программного обеспечения для редактирования текста.
-                Позволяет проверить оригинальность написанного контента
-                Блогеры, писатели и веб-мастера могут использовать наш перефразировщик, чтобы переписать содержание, избегая плагиата.
-                Это помогает разработчикам работать с одним файлом, одновременно работая над разными проектами.
-              </p>
-              <button data-modal-close>Закрыть</button>
+              <form class="form" action="#">
+                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-field">
+                  
+                  <input class="form-input" type="text" name="name" id="name" placeholder=" " autocomplete="on" required>
+                <label class="form-label" for="name">Имя</label>
+                <svg class="form-svg" width="18px" height="18px"><use href="./img/sprite_2.svg#name"></use></svg>
+                </div>
+                <div class="form-field">
+                  
+                  <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " autocomplete="off" required>
+                  <label class="form-label" for="tel">Телефон</label>
+                  <svg class="form-svg" width="18px" height="18px">
+                  <use href="./img/sprite_2.svg#phone"></use></svg>
+                </div>
+                <div class="form-field">
+                 
+                  <input class="form-input" type="email" name="mail" id="mail" placeholder=" " autocomplete="on" required>
+                   <label class="form-label" for="mail">Почта</label>
+                   <svg class="form-svg" width="18px" height="18px">
+                  <use href="./img/sprite_2.svg#email"></use></svg>
+                </div>
+                <div class="form-field">
+                  <textarea class="form-textarea " name="coment" id="coment" placeholder="Коментарий" ></textarea>
+                </div>
+                <div class="form-field">
+                  <label class="checkbox-label">
+                  <input type="checkbox" name="policy" class="form-checkbox">
+                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%BA%D1%96%D0%BF%D0%B5%D0%B4%D1%96%D1%8F:%D0%9F%D0%BE%D0%BB%D1%96%D1%82%D0%B8%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BD%D1%84%D1%96%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%96"> Условия договора</a></span>
+                
+                </label>
+                </div>
+                <button tupe="submit" class="button-modal">Отправить</button>
+                <button class="close" type="reset" data-modal-close>
+            <svg class="close-svg" width="18px" height="18px">
+              <use href="./img/sprite_2.svg#x"></use></svg>
+          </button>
+              </form>
+              <!-- <button data-modal-close>Закрыть</button> -->
             </div>
           </div>
         </section>
@@ -377,21 +409,25 @@
         </ul>
       </div>
 
-      
-      <!-- <p>
-        <b>подпишитесь на рассылку</b>
-      </p> -->
-
-      <!-- <div>
+      <div>
         <ul>
           <li>
             
           </li>
           <li>
-            <a href="#" class="button-studio">Подписаться</a>
+            <form action="#">
+              <!-- <b>ПОДПИШИТЕСЬ НА РАССЫЛКУ</b> -->
+              <label class="footer-imput" for="spam">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+              <input class="forma" type="mail" name="spam" id="spam" autocomplete="email" placeholder="E-mail"/>
+              <button type="submit" class="button-studio">Подписаться
+                <svg class="telegram-icon" width="24px" height="24px">
+                  <use href="./img/sprite_2.svg#telega"></use>
+                </svg>
+              </button>
+            </form>
           </li>
         </ul>
-      </div> -->
+      </div>
     </footer>
     <script src="./js/modal.js"></script>
 </body>
